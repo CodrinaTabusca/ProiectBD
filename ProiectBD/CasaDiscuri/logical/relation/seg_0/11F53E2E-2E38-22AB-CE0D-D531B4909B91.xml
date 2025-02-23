@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="album_piese_fk" directorySegmentName="seg_0" id="11F53E2E-2E38-22AB-CE0D-D531B4909B91">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 20:51:17 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="true"/>
+</engineerTo>
+<sourcePk>759CF461-60C7-77A0-709A-67B3D78B4255</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>contine</nameOnSource>
+<nameOnTarget>apartine</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D20728BB-C022-E2B7-00D1-9A4A5DD934C3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1B896D31-853E-AA5F-D9EC-BA83F44A1254</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

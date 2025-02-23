@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D20728BB-C022-E2B7-00D1-9A4A5DD934C3" name="album">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-26 13:06:05 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_album" id="6E312117-7FD5-1167-9ED9-5D7A6402D994">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-26 13:06:14 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="true"/>
+</engineerTo>
+<constraintName>album_id_album_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(id_album, &apos;^\d{1,3}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tip_album" id="8B586C14-2632-3AEA-A036-66A9CE6480BC">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-26 13:06:39 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="true"/>
+</engineerTo>
+<constraintName>album_tip_album_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE( tip_album, &apos;^(CD|vinyl)$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="titlu_album" id="58B71D14-BC2B-7158-8B7A-72657B38B16F">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-26 13:07:19 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stoc" id="DE536716-E0E7-BF73-F8AC-4B7697B7BC44">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-26 13:08:59 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="true"/>
+</engineerTo>
+<constraintName>album_stoc_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="stoc &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_artist" id="9E511955-715E-F8D1-5C2C-52D21F2B9E10">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 20:43:23 UTC</createdTime>
+<generatorID>89CEE63D-EB50-F727-E6F7-83CEDDF63ADF</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="true"/>
+</engineerTo>
+<referedAttribute>80844F86-5117-42B9-F4F2-286B22AA11A7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="759CF461-60C7-77A0-709A-67B3D78B4255" name="album PK">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-26 13:06:32 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6E312117-7FD5-1167-9ED9-5D7A6402D994</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

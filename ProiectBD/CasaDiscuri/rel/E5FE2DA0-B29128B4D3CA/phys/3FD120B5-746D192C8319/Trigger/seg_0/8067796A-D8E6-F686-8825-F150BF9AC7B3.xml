@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_artisti_data_nasterii" directorySegmentName="seg_0" id="8067796A-D8E6-F686-8825-F150BF9AC7B3">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 17:31:57 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	IF( :new.data_nasterii >=ADD_MONTHS(SYSDATE, -14*12) )
+	THEN
+		RAISE_APPLICATION_ERROR( -20001,
+			'Data invalida: ' || TO_CHAR( :new.data_nasterii, 'DD.MM.YYY HH24:MI:SS' ) || ' trebuie sa fie mai mare decat data curenta.' );
+	END IF;
+END]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>77A88B4B-1994-3BEE-D11F-F6D0F3DAC541</table>
+</TriggerOraclev10g>

@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="vanzari" directorySegmentName="seg_0" id="966123F7-A4C4-6588-304A-891FE8833633">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-27 21:29:40 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>D20728BB-C022-E2B7-00D1-9A4A5DD934C3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FE29362D-9597-76A2-5C62-8EC37EE4B626</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="data_cumparare" id="6D97E598-93E5-ABBD-DB84-09E14683BB2E">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-31 14:09:56 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="cantitate" id="13AF49CE-4F87-DD8C-1F3E-5D659E3698BA">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-31 14:10:29 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

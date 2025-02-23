@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="clienti" directorySegmentName="seg_0" id="0FC5C7E6-03D6-3848-CB93-9EA99D5421B0">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="nume_client" id="343DB0E9-53BA-F2DA-E7E1-878EE2379A3D">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="email" id="99551F04-DDBA-7ED0-1CD7-A5A92D6C7652">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_client" id="AB9D3E51-AE19-BB5B-37F4-1F129EFF884F">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="telefon" id="EECABE7F-256D-AA41-8B81-AA4B0BC7D9C8">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="clienti_PK" id="30712BDB-D5D5-E00C-8148-AFF449793037">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="clienti_email_nume_client_UN" id="49EF97E4-8645-004C-82A6-4BB2763017FD">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

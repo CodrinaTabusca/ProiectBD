@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_detalii_alb_data_lansare" directorySegmentName="seg_0" id="BBD6EE01-002E-4130-A7F4-8F4B7A0BDCB4">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 17:32:58 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	IF( :new.data_lansare >=SYSDATE )
+	THEN
+		RAISE_APPLICATION_ERROR( -20001,
+			'Data invalida: ' || TO_CHAR( :new.data_lansare, 'DD.MM.YYY HH24:MI:SS' ) || ' trebuie sa fie mai mare decat data curenta.' );
+	END IF;
+END]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>BB16062D-1FDC-5A88-7628-321E41618550</table>
+</TriggerOraclev10g>

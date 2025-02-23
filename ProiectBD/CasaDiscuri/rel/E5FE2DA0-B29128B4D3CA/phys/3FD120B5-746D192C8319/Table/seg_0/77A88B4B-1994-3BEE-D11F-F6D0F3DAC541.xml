@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="artisti" directorySegmentName="seg_0" id="77A88B4B-1994-3BEE-D11F-F6D0F3DAC541">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="nume_artist" id="32918B7A-D387-51E9-1AC0-C13E0630A4E1">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_nasterii" id="CB3E4837-8BC7-EA90-3610-A0BC64250BA4">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_artist" id="D2FB8068-5ED3-CC36-6A5B-2EC68015F394">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="artisti_PK" id="84741E71-8639-69D9-3F19-A7DFD6CBBFE0">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

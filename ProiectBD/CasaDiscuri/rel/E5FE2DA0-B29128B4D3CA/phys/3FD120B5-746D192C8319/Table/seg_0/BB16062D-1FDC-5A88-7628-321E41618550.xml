@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="detalii_album" directorySegmentName="seg_0" id="BB16062D-1FDC-5A88-7628-321E41618550">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_album" id="28A6BFC9-27A8-49A2-9458-95368A989B03">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_lansare" id="A54F3C55-C929-437B-84FD-8FA92F3D93FE">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pret" id="ECB5FA54-D88E-4DEC-9897-CB8472A781D0">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="detalii_album__IDX" id="88FC331D-43DB-76BE-C784-9B4CDB88E1A1">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="detalii_album_album_FK" id="791E8B4A-728D-616D-EF5F-AADD9B45A65E">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-24 16:00:12 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev12c>

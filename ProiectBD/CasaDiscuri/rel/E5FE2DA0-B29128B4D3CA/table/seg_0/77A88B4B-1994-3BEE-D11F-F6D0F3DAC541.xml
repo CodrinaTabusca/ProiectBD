@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="77A88B4B-1994-3BEE-D11F-F6D0F3DAC541" name="artisti">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>A605DC1F-3B1A-EBEF-524D-114112BA6151</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nume_artist" id="32918B7A-D387-51E9-1AC0-C13E0630A4E1">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>59D9C0FB-F7DB-0681-5832-6458394ECD5D</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<constraintName>artisti_nume_artist_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume_artist,&apos;[A-Z][a-z]{2,29} [A-Z][a-z]{2,29}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_artist" id="D2FB8068-5ED3-CC36-6A5B-2EC68015F394">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>80844F86-5117-42B9-F4F2-286B22AA11A7</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<constraintName>artisti_id_artist_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(id_artist, &apos;^\d{1,3}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>100</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="data_nasterii" id="CB3E4837-8BC7-EA90-3610-A0BC64250BA4">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>D821F280-D092-1B67-E715-2AAA1440D1F8</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="84741E71-8639-69D9-3F19-A7DFD6CBBFE0" name="artisti_PK">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>B9CB53AB-4D0D-1E2B-FEFB-EE018657A1F7</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2FB8068-5ED3-CC36-6A5B-2EC68015F394"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

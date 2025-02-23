@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="17C07607-6DA1-7427-C18F-93D0DBA38C57" containerWithKeyObject="68B8362D-833F-5778-4B20-38C0DFCE5E42" localFKIndex="F70BF6F9-050F-31BB-269A-0E3BE5F8C153" name="piese_album_FK">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>11F53E2E-2E38-22AB-CE0D-D531B4909B91</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<referredTableLongName>album</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>370B69FF-2CB0-148B-B6AF-0CEC3B7EC707</referredTableID>
+<keyObject>64123E82-CA96-B94D-AC51-9B8DDC2E260E</keyObject>
+<referredKeyID>64123E82-CA96-B94D-AC51-9B8DDC2E260E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_album</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

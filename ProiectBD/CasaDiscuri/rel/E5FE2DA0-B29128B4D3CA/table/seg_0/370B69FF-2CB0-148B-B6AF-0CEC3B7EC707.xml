@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="370B69FF-2CB0-148B-B6AF-0CEC3B7EC707" name="album">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>D20728BB-C022-E2B7-00D1-9A4A5DD934C3</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_album" id="3C62C82E-A24F-F83C-E356-2966D73781A8">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>6E312117-7FD5-1167-9ED9-5D7A6402D994</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<constraintName>album_id_album_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(id_album, &apos;^\d{1,3}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="tip_album" id="94519B15-83B2-7307-D036-E122BE56B0DE">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>8B586C14-2632-3AEA-A036-66A9CE6480BC</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<constraintName>album_tip_album_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE( tip_album, &apos;^(CD|vinyl)$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="titlu_album" id="244C49AC-10B1-A73A-9A9F-DF0B4B804D77">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>58B71D14-BC2B-7158-8B7A-72657B38B16F</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stoc" id="DCEAD463-D433-0370-26A0-4D9B5F668EC4">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>DE536716-E0E7-BF73-F8AC-4B7697B7BC44</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<constraintName>album_stoc_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="stoc &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_artist" id="328985C5-1F8E-F699-CBA2-82F96A197E62">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>9E511955-715E-F8D1-5C2C-52D21F2B9E10</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63AA2942-1206-6352-830B-F269054D4FF3" referredColumn="D2FB8068-5ED3-CC36-6A5B-2EC68015F394"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="64123E82-CA96-B94D-AC51-9B8DDC2E260E" name="album_PK">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>759CF461-60C7-77A0-709A-67B3D78B4255</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C62C82E-A24F-F83C-E356-2966D73781A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E91DAB0-4257-98F7-2C27-F622F43BA387" name="album_artisti_FK">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>89CEE63D-EB50-F727-E6F7-83CEDDF63ADF</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="328985C5-1F8E-F699-CBA2-82F96A197E62"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

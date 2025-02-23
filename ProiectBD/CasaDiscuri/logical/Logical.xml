@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="00CCC877-6DD7-3504-B5BF-1ED5578CFE96" mainViewID="DAD04335-1525-9A2C-A619-5461C75DC20B">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-25 19:04:07 UTC</createdTime>
+<ownerDesignName>et2BDP</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

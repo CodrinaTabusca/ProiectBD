@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="BEA35A29-064A-C9FF-F76D-66E97616A3F9">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-25 19:04:08 UTC</createdTime>
+<ownerDesignName>et2BDP</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

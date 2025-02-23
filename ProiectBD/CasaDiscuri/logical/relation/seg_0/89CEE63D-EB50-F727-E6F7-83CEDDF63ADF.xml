@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="artisti_album_fk" directorySegmentName="seg_0" id="89CEE63D-EB50-F727-E6F7-83CEDDF63ADF">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 20:43:23 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="true"/>
+</engineerTo>
+<sourcePk>B9CB53AB-4D0D-1E2B-FEFB-EE018657A1F7</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>creeaza</nameOnSource>
+<nameOnTarget>apartine</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A605DC1F-3B1A-EBEF-524D-114112BA6151</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D20728BB-C022-E2B7-00D1-9A4A5DD934C3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

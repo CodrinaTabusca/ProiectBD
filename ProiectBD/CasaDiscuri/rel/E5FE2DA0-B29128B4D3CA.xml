@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" mainViewID="044ED136-F183-EABD-0E9A-6C5A78376FA1">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-25 19:04:14 UTC</createdTime>
+<ownerDesignName>et2BDP</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

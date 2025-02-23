@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A605DC1F-3B1A-EBEF-524D-114112BA6151" name="artisti">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-25 19:06:01 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nume_artist" id="59D9C0FB-F7DB-0681-5832-6458394ECD5D">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-25 19:06:17 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="true"/>
+</engineerTo>
+<constraintName>artisti_nume_artist_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume_artist,&apos;[A-Z][a-z]{2,29} [A-Z][a-z]{2,29}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_artist" id="80844F86-5117-42B9-F4F2-286B22AA11A7">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-25 19:13:57 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="true"/>
+</engineerTo>
+<constraintName>artisti_id_artist_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(id_artist, &apos;^\d{1,3}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_nasterii" id="D821F280-D092-1B67-E715-2AAA1440D1F8">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-25 19:33:01 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B9CB53AB-4D0D-1E2B-FEFB-EE018657A1F7" name="artisti PK">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-25 19:32:38 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E5FE2DA0-1B1F-8612-B399-B29128B4D3CA" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>80844F86-5117-42B9-F4F2-286B22AA11A7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

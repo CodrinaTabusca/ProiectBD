@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CasaDiscuri" id="63C2828D-FCF0-9E9A-9A1F-4CF30573B923" version="3.5">
+<createdBy>tabus</createdBy>
+<createdTime>2024-10-25 19:04:07 UTC</createdTime>
+<ownerDesignName>et2BDP</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>63C2828D-FCF0-9E9A-9A1F-4CF30573B923</designId>
+</OSDM_Design>

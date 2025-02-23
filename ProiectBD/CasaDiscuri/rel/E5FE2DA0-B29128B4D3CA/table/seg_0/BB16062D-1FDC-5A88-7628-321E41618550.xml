@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BB16062D-1FDC-5A88-7628-321E41618550" name="detalii_album">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>AE3CB5D6-2505-C587-D266-E150D6A3EFF9</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="data_lansare" id="A54F3C55-C929-437B-84FD-8FA92F3D93FE">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>E28499FB-1B48-2A12-4B4C-876640F67A2D</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pret" id="ECB5FA54-D88E-4DEC-9897-CB8472A781D0">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>73F034C0-D5F6-0C68-537E-C0D7637FBCF3</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<constraintName>detalii_album_pret_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>50</beginValue>
+<endValue>200</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="id_album" id="28A6BFC9-27A8-49A2-9458-95368A989B03">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>0232E86A-D1B7-8BC4-79DD-8FBF6497920D</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F708E24B-9103-27F0-C142-41AB197CF360" referredColumn="3C62C82E-A24F-F83C-E356-2966D73781A8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="88FC331D-43DB-76BE-C784-9B4CDB88E1A1" name="detalii_album__IDX">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>49C873EE-071F-3765-3E04-E2EF10A1DEFF</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="28A6BFC9-27A8-49A2-9458-95368A989B03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="791E8B4A-728D-616D-EF5F-AADD9B45A65E" name="detalii_album_album_FK">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>49C873EE-071F-3765-3E04-E2EF10A1DEFF</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28A6BFC9-27A8-49A2-9458-95368A989B03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

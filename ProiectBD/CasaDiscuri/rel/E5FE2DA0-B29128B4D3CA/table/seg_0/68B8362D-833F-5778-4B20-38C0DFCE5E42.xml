@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="68B8362D-833F-5778-4B20-38C0DFCE5E42" name="piese">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>1B896D31-853E-AA5F-D9EC-BA83F44A1254</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_piesa" id="AF533D3A-18AF-025E-5257-189FCD80DA36">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>123B6670-5942-6705-0FC7-63792D080870</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<constraintName>piese_id_piesa_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(id_piesa, &apos;^\d{1,3}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>200</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="titlu_piesa" id="40C1D824-C8C6-BC6A-C8BB-93DA0AA0ABFB">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>9CA8CB05-05B8-1470-4E6A-1B06E0C16463</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_album" id="C51A4886-6152-A062-1D0F-AF920AB0702B">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>8D1D1210-C035-B08F-F724-17E8BC25BD0C</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17C07607-6DA1-7427-C18F-93D0DBA38C57" referredColumn="3C62C82E-A24F-F83C-E356-2966D73781A8"/>
+</associations>
+</Column>
+<Column name="id_artist" id="D84B1B9B-1FCD-4487-24E5-1CBC6D07C883">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>AE555D1B-0C77-7FF7-50A7-617F67161420</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90607BEE-7CA2-6BF4-BE12-C2F4FCCEE669" referredColumn="D2FB8068-5ED3-CC36-6A5B-2EC68015F394"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6AEEB153-8C7B-FE3E-AF34-5C88B3BCEB88" name="piese_PK">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>1259FDE3-67AB-982C-1AF6-CD4F196B40E9</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF533D3A-18AF-025E-5257-189FCD80DA36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F70BF6F9-050F-31BB-269A-0E3BE5F8C153" name="piese_album_FK">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>11F53E2E-2E38-22AB-CE0D-D531B4909B91</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C51A4886-6152-A062-1D0F-AF920AB0702B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CEC4D2B5-3BC2-0712-CEA3-BCB0E16DEEF1" name="piese_artisti_FK">
+<createdBy>tabus</createdBy>
+<createdTime>2024-11-04 21:00:47 UTC</createdTime>
+<generatorID>0D108163-3282-595A-8791-7F12A0BBFF80</generatorID>
+<ownerDesignName>CasaDiscuri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D84B1B9B-1FCD-4487-24E5-1CBC6D07C883"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
